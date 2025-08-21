@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>menu bar</title>
+    <link rel="stylesheet" href="menubar.css">
+    <link rel="stylesheet" href="home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="search.js"></script>
+</head>
+<body> 
+    <!--==Navigation================================-->
+    <nav class="navigation">
+        
+      
+
+            <!--logo-------->
+            <a href="#" class="logo">
+
+                <span>K</span>VV
+
+            </a>
+    
+        <div class="set">
+            
+        <a href="home.html">Home</a>
+        <a href="#category">Category</a>
+        <a href="#popular-product">Products</a>
+        <a href="#offers">Offers</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="#search-banner" class="search-button">Search</a>
+        <a href="signup.html">Signup</a>
+        <a href="login.html">Login</a>
+        
+        
+        <div id="marker"></div> 
+        </div>
+
+    <!--==============LIKE CART PROFILE==============-->
+                   <div class="right-nav">
+                 
+                    <!--like----->
+                    <a href="#" class="like">
+    
+                        <i class='bx bx-like'></i>
+
+    
+                        <span>
+                            
+                            3
+                        
+                        </span>
+    
+                    </a>
+    
+                    <!--cart----->
+                    <a href="#" class="cart">
+    
+                        <i class='bx bx-cart'></i>
+
+    
+                        <span>
+                            
+                            3
+                        
+                        </span>
+    
+                    </a>
+    
+                    <!--profile----->
+                    <a href="#" class="user-profile">
+    
+                        <i class='bx bx-user'></i>
+
+    
+                        <span>
+    
+                            4
+    
+                        </span>
+    
+                    </a>
+    
+                </div>
+   
+        
+      
+
+    </nav>
+    <!--nav end-->
+    <!--==Search-banner=======================================-->
+    <section id="search-banner">
+
+        <!--bg--------->
+        <img alt="tomato" class="bg-1" src="./vus/tomato.png">
+
+        <img alt="bg" class="bg-1_rev" src="Default_withput_background_fruits_pics_0_15128713-ff3d-42c8-b065-fb13f9c48698_0.png">
+
+     
+
+        <!--text------->
+        <div class="search-banner-text">
+
+            <h1>
+                
+                Shop Fresh Alternatives Today
+            
+            </h1>
+
+            <strong>
+                
+                #Delivery on Us!
+            
+            </strong>
+
+            <!--search-box------>
+            <div id="#search-banner">
+            <form action="" class="search-box" onsubmit="performSearch(event)">
+
+                <!--icon------>
+                <i class='bx bx-search'></i>
+
+                <!--input----->
+                <input type="text" class="search-input" placeholder="Search" name="search" size = "80px" required>
+
+                <!--btn------->
+                <input type="submit" class="search-btn" value="Search">
+               
+            </form>
+            <div id="search-suggestions" ></div>
+            <br>
+
+            <h3>
+
+                <a href = '#offers' style = 'color: #40aa54'>
+
+                    Discover Today's Top Deals Here
+
+                </a>
+
+            </h3>
+
+        </div>
+</div>
+    </section>
+              <!--==category=========================================-->
+        <section id="category">
+
+            <!--heading---------------->
+            <div class="category-heading">
+
+                <h2>
+                    
+                    Category
+                
+                </h2>
+
+                <span>
+                    
+                    All
+                
+                </span>
+
+            </div>
+
+            <!--box-container---------->
+            <div class="category-container">
+
+                <!--box1---------------->
+                <a class="category-box" href = '#'>
+					<img alt="Fruits and Vegetables" src="fruitlogo.png">
+					<span>Fruits & <br> Vegetables</span>
+				</a>
+				<!--box2---------------->
+                <a class="category-box" href = '#'>
+                    <img alt="Medicines" src="medicinelogo.png">
+                    <span>Medicine</span>
+                </a>
+                <!--box3---------------->
+                <a class="category-box" href="# ">
+                    <img alt="Baby Care Products" src="babycarelogo.png">
+                    <span>Baby Care</span>
+                </a>
+                <!--box4---------------->
+                <a class="category-box" href = '#'>
+                    <img alt="Stationary" src="stationarylogo.png">
+                    <span>Stationary</span>
+                </a>
+                <!--box5---------------->
+                <a class="category-box" href = '# '>
+                    <img alt="Beauty Products" src="beautylogo.png">
+                    <span>Beauty</span>
+                </a>
+                <!--box6---------------->
+                <a class="category-box" href = '# '>
+                    <img alt="Gardening Products" src="gardeninglogo.png">
+                    <span>Gardening</span>
+                </a>
+            </div>
+
+            </div>
+
+            <!--box-container 2---------->
+            <div class="category-container">
+
+                <!--box7---------------->
+                <a class="category-box" href = '#'>
+                    <img alt="Beauty Products" src="beautylogo.png">
+                    <span>Beauty</span>
+                </a>
+				<!--box8---------------->
+                <a class="category-box" href = '#'>
+                    <img alt="Stationary" src="stationarylogo.png">
+                    <span>Stationary</span>
+                </a>
+                <!--box9---------------->
+                <a class="category-box" href = '#'>
+                    <img alt="Gardening Products" src="gardeninglogo.png">
+                    <span>Gardening</span>
+                </a>
+                <!--box10---------------->
+                <a class="category-box" href = '#'>
+                    <img alt="Medicines" src="medicinelogo.png">
+                    <span>Medicine</span>
+                </a>
+                <!--box11---------------->
+                <a class="category-box" href = '#'>
+					<img alt="Fruits and Vegetables" src="fruitlogo.png">
+					<span>Fruits & <br> Vegetables</span>
+				</a>
+                <!--box12---------------->
+                <a class="category-box" href="#">
+                    <img alt="Baby Care Products" src="babycarelogo.png">
+                    <span>Baby Care</span>
+                </a>
+            </div>
+            
+        </section>
+        <!--category-end-----------------------------------> 
+    
+
+        <!--==Products====================================-->
+        <section id="popular-product">
+            <!--heading----------->
+            <div class="product-heading">
+                <h3>Popular Product</h3>
+                <span>All</span>
+            </div>
+            <!--box-container------>
+            <div class="product-container">
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="apple" src="Default_one_apple_image_0_dde94654-e691-4e5d-bd1c-3889a9b24dd7_0.png">
+                    <strong>Apple</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">Rs. 120</span>
+                    <!--cart-btn------->
+                    <a href="cart.html" class="cart-btn">
+                        <i class='bx bx-shopping-bag'></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class='bx bx-heart'></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="chili" src="chili.png">
+                    <strong>Chili</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">Rs. 80</span>
+                    <!--cart-btn------->
+                    <a href="cart.html" class="cart-btn">
+                        <i class='bx bx-shopping-bag'></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class='bx bx-heart'></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="apple" src="Default_real_one_onion_0_4cd84514-2d78-4330-8339-5f4ddc4ffc0a_0.png">
+                    <strong>Onion</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">Rs. 50</span>
+                    <!--cart-btn------->
+                    <a href="cart.html" class="cart-btn">
+                        <i class='bx bx-shopping-bag'></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class='bx bx-heart'></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="apple" src="potato.png">
+                    <strong>Potato</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">Rs. 60</span>
+                    <!--cart-btn------->
+                    <a href="cart.html" class="cart-btn">
+                        <i class='bx bx-shopping-bag'></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class='bx bx-heart'></i>
+                    </a>
+                </div>
+                <!--box---------->
+                
+                     <div class="product-box">
+                        
+                    <img  alt="apple" src="garlic.png">
+                   
+                    <strong>Garlic</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">Rs. 50</span>
+                    <!--cart-btn------->
+                    <a href="#" class="cart-btn">
+                        <i class='bx bx-shopping-bag'></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class='bx bx-heart'></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="apple" src="tomatoproduct.png">
+                    <strong>Tomato</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">Rs. 80</span>
+                    <!--cart-btn------->
+                    <a href="cart.html" class="cart-btn">
+                        <i class='bx bx-shopping-bag'></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class='bx bx-heart'></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--popular-product-end--------------------->
+      
+
+        <!--==Offers====================================-->
+        <section id="popular-product">
+            <!--heading----------->
+            <div id="offers">
+            <div class="product-heading">
+                <h3>Time Limited Offers</h3>
+                <span>All</span>
+            </div>
+            <!--box-container------>
+            <div class="product-container">
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="apple" src="orange.png">
+                    <strong>Orange</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price"><del>Rs. 100</del> &nbsp;Rs. 80</span>
+                    <!--cart-btn------->
+                    <a href="cart.html" class="cart-btn">
+                        <i class='bx bx-shopping-bag'></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class='bx bx-heart'></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="Lemon" src="lemon.png">
+                    <strong>Lemon</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price"><del>Rs. 140</del> &nbsp;Rs. 110</span>
+                    <!--cart-btn------->
+                    <a href="cart.html" class="cart-btn">
+                        <i class='bx bx-shopping-bag'></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class='bx bx-heart'></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="Avocado" src="Avocado.png">
+                    <strong>Avodaco</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price"><del>Rs. 65</del> &nbsp;Rs. 45</span>
+                    <!--cart-btn------->
+                    <a href="cart.html" class="cart-btn">
+                        <i class='bx bx-shopping-bag'></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class='bx bx-heart'></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="carrot" src="carrot.png">
+                    <strong>Carrot</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price"><del>Rs. 40</del> &nbsp;Rs. 35</span>
+                    <!--cart-btn------->
+                    <a href="cart.html" class="cart-btn">
+                        <i class='bx bx-shopping-bag'></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class='bx bx-heart'></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="Cabbage" src="cabbage.png">
+                    <strong>Cabbage</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price"><del>Rs. 55</del> &nbsp;Rs. 40</span>
+                    <!--cart-btn------->
+                    <a href="#" class="cart-btn">
+                        <i class='bx bx-shopping-bag'></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class='bx bx-heart'></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="watermln" src="watermln.png">
+                    <strong>Watermelon</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price"><del>Rs. 70</del> &nbsp;Rs. 55</span>
+                    <!--cart-btn------->
+                    <a href="cart.html" class="cart-btn">
+                        <i class='bx bx-shopping-bag'></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class='bx bx-heart'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!--popular-product-end--------------------->
+      <!--===========scroll button=======-->
+      <button onclick="scrollToTop()" id="scrollbtn" title="Go to top"><i class='bx bxs-chevrons-up'></i></button>
+
+      <!--==Footer=============================================-->
+      <footer>
+        <div class="footer-container">
+            <!--logo-container------>
+            <div class="footer-logo">
+                <a href="home.html"><span>K</span>VV</a>
+                <!--social----->
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://twitter.com/?lang=en-in"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.youtube.com/"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <!--links------------------------->
+        <div class="footer-links">
+            <strong>Product</strong>
+            <ul>
+                <li><a href="#">Grocery</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">New</a></li>
+            </ul>
+        </div>
+        <!--links------------------------->
+        <div class="footer-links">
+            <strong>Category</strong>
+            <ul>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Vegetables</a></li>
+                <li><a href="#">Baby</a></li>
+                <li><a href="#">Medicine</a></li>
+            </ul>
+        </div>
+        <!--links-------------------------->
+        <div class="footer-links">
+            <strong>Contact</strong>
+            <ul>
+                <li><a href="#">Phone : +012812589</a></li>
+                <li><a href="#">Email : KVV@gmail.com</a></li>
+            </ul>
+            <br><p style="color: aliceblue;">Copyright ©2023 | All Rights Reserved</p>
+        </div>
+        </div>
+    </footer>
+
+
+    <!--========javascript here==========-->
+
+    <!---------for fixed navbar----=====================================
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navigation');
+            if (window.scrollY > 50) {
+                navbar.style.position = 'fixed';
+                navbar.style.top = 0;
+                navbar.style.left = 0;
+                navbar.style.width = '100%';
+                navbar.style.zIndex = 1000;
+            } else {
+                navbar.style.position = 'static';
+            }
+        });
+        
+    </script>
+=================================================================================-->
+
+
+    <!---------for marker to go from one to another-------->
+
+    <script>
+        let marker = document.querySelector('#marker');
+        let item = document.querySelectorAll(".set a")
+
+        function indicator(e){
+            marker.style.left=e.offsetLeft+'px';
+            marker.style.width= e.offsetWidth+'px';
+        }
+        item.forEach(link =>{
+            link.addEventListener('click', (e) =>{
+                indicator(e.target);
+            })
+        })
+</script>
+
+
+        <!--------for search scroll in nav---------->
+        <script>
+      
+document.querySelector('.search-button').addEventListener('click', function(e) {
+    e.preventDefault();
+    const searchSection = document.querySelector('#search-banner');
+    
+    
+    searchSection.scrollIntoView({ behavior: 'smooth' });
+});
+    </script>
+
+<!--=================for scroll button==================-->
+<script>
+    function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+
+    window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        document.getElementById("scrollbtn").style.display = "block";
+    } else {
+        document.getElementById("scrollbtn").style.display = "none";
+    }
+}
+
+</script>
+</body>
+</html>
+

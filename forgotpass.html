@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forgot password</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="forgotpass.css" rel="stylesheet">
+    
+  <link rel="preload" as="image" href="forgot.jpg">
+</head>
+<body>
+    <div class="content">
+        <form id="forget" action="login.html" method="post">
+            <h1>Forgot Password</h1>
+            <p>Enter your email id to reset your password</p>
+
+            <div class="input-box">
+
+                <input type="email"  placeholder="Email address" name="mail" required>
+                <i class='bx bx-envelope' ></i>
+            </div>
+
+            
+
+            <button type="submit" class="btn">Reset Password</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="signup.html">Register</a></p>
+            </div>
+         
+        </form>
+        <div id="thankYouMessage" style="display: none;">
+            <h2>Please check your mail inbox!</h2>
+            <p>you are now redirecting to login page.</p>
+        </div>
+     
+    </div>
+
+       <!--======================Javascript for thankyou and redirect to login page================================-->
+
+   <script>
+    document.getElementById('forget').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    document.getElementById('forget').style.display = 'none';
+    document.getElementById('thankYouMessage').style.display = 'block';
+    setTimeout(function() {
+        window.location.href = 'login.html';
+    }, 3000);
+});
+    </script>
+  
+</body>
+</html>

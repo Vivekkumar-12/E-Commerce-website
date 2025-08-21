@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="feedback.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="content">
+        <form id="feedbackForm" action="home.html" method="post">
+            <h1>Feedback</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bx-user' ></i>
+            </div>
+             <div class="input-box">
+
+            <input type="email"  placeholder="Email address" name="mail" required>
+            <i class='bx bx-envelope' ></i>
+        </div>
+        
+            <div class="Textarea">
+                <textarea rows="4" cols="50" placeholder ="Your Message" required></textarea>
+                
+            </div>
+           
+            <button type="submit" class="btn">Submit</button>
+            
+               
+        
+        </form>
+        <div id="thankYouMessage" style="display: none;">
+            <h2>Thank you for your feedback!</h2>
+            <p>We appreciate your time.</p>
+        </div>
+
+    </div>
+
+
+    <!--======================Javascript for thankyou and redirect to home page================================-->
+    <script>
+    document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    document.getElementById('feedbackForm').style.display = 'none';
+    document.getElementById('thankYouMessage').style.display = 'block';
+    setTimeout(function() {
+        window.location.href = 'home.html';
+    }, 3000);
+});
+    </script>
+  
+
+</body>
+</html>
